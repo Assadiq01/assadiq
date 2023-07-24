@@ -528,6 +528,7 @@ img {
 .skills_name{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  color: #7c7a7a;
 }
 
 .skills_bar,
@@ -630,6 +631,7 @@ img {
 .qualification_title{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  color: #5f5959;
 }
 
 .qualification_subtitle{
@@ -912,6 +914,7 @@ img {
 .contact_title{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+  color: #5f5959;
 }
 
 .contact_subtitle{
