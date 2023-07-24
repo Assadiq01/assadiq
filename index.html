@@ -666,25 +666,25 @@
             <div class="contact_inputs grid">
                 <div class="contact_content">
                     <label for="" class="contact_label">Name</label>
-                    <input type="text" class="contact_input">
+                    <input type="text" id="name" class="contact_input">
                 </div>
                 <div class="contact_content">
                     <label for="" class="contact_label">Email</label>
-                    <input type="email" class="contact_input">
+                    <input type="email" id="email" class="contact_input">
                 </div>
             </div>
             <div class="contact_content">
                 <label for="" class="contact_label">Project</label>
-                <input type="tetx" class="contact_input">
+                <input type="text" id="project" class="contact_input">
             </div>
             <div class="contact_content">
                 <label for="" class="contact_label">Project description</label>
-                <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                <textarea name="" id="" cols="0" rows="7" id="description" class="contact_input"></textarea>
             </div>
             <div>
                 <a href="#" class="button button--flex">
                     Send Message 
-                    <i class="uil uil-message button_icon"></i>
+                    <i class="uil uil-message button_icon" onclick="whatsapp()"></i>
                 </a>
             </div>
         </form>
@@ -732,6 +732,23 @@
               <p class="footer_copy">&#169; AssadiQ Codes. All right reserved</p>
             </div>
           </footer>
+
+        <script>
+        function whatsapp(){
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var project = document.getElementById('project').value;
+            var description = document.getElementById('description').value;
+
+            var whatsappurl = 'https://wa.me/+2348160203798?text='
+            + "My Name: " + " " + name + '%0a'
+            + "My Email: " + " " + email + '%0a'
+            + "project: " + " " + project + '%0a'
+            + "My description: " + " " + description;
+
+            window.open(whatsappurl,'_blank').focus();
+        }
+</script>
           
           <!--==================== SCROLL TOP ====================-->
           <a href="#" class="scrollup" id="scroll-up">
